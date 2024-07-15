@@ -1,0 +1,51 @@
+.search-view,
+.search-view.active {
+  all: unset;
+  display: block;
+  position: relative;
+  width: 500px;
+  animation: none;
+}
+
+.search-view{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    background-color: var(--surface);
+    color: var(--on-surface);
+    clip-path: circle(4% at calc(100% - 102px) 5%);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 4;
+    transition: clip-path 500ms ease;
+}
+
+.search-view.active{
+    opacity: 1;
+    visibility: visible;
+    clip-path: circle(130% at 73% 5%);
+}
+
+.search-view{ 
+    clip-path: circle(3% at calc(100% - 273px) 6%); 
+}
+
+.search-view:not(:focus-within) .search-result { 
+    display: none; 
+}
+
+.search-view:focus-within .search-result.active { 
+    display: block; 
+}
+
+.search-view:has(.search-result.active):focus-within .search-field {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-view:is(:hover, :has(.view-list):hover) {
+    filter: drop-shadow(var(--shadow-1));
+}

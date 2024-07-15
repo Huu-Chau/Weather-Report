@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState, useEffect } from 'react';
+import Header from "./components/header/header.component"
+import Main from "./components/main/main.component"
+
 
 function App() {
+  const [weatherData, setweatherData] = useState([])
+  const api_key = "191b6752dc4cb3908988a414839dc067"
+  const [cityName, setcityName] = useState('Tây Ninh') 
+  useEffect(() => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName},vn&APPID=${api_key}`)
+    .then((data) => data.json())
+    .then((jsonData) => setweatherData(jsonData))
+  })
+
+  const cityHandler = (city) => {
+    setcityName(city.target.value)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header oncityHandler={cityHandler}/>
+      <Main weather={weatherData}/>   
     </div>
   );
 }
