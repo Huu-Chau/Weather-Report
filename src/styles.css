@@ -179,7 +179,7 @@ body {
   font-family: 'Material Symbols Rounded';
   font-style: normal;
   font-weight: 400;
-  src: url(./font.woff2) format("woff2");
+  src: url(../public/font.woff2) format("woff2");
 }
 
 .m-icon {

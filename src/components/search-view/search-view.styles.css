@@ -49,3 +49,16 @@
 .search-view:is(:hover, :has(.view-list):hover) {
     filter: drop-shadow(var(--shadow-1));
 }
+
+@media (min-width: 1200px) {
+    .search-view, .search-view.active {
+        all: unset;
+        display: block;
+        position: relative;
+        width: 500px;
+        animation-timeline: auto;
+        animation-range-start: normal;
+        animation-range-end: normal;
+        animation: auto ease 0s 1 normal none running none;
+    }
+}

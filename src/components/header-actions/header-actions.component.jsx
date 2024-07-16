@@ -1,12 +1,16 @@
-import "./header-action.styles.css"
+import "./header-actions.styles.css"
 
-const HeaderAction = () => {
+const HeaderActions = () => {
+    const toggleSearchView = () => {
+        
+    }
+
     return(
-        <div className="header-action">
+        <div className="header-actions">
             <button 
                 className="icon-btn has-state" 
                 aria-label="open search" 
-                data-search-toggler=""
+                onClick={toggleSearchView}
             >
                 <span className="m-icon icon">search</span>
             </button>
@@ -19,9 +23,9 @@ const HeaderAction = () => {
             >
                 <span className="m-icon">my_location</span>
                 <span className="span">Current Location</span>
-          </a>
+            </a>
         </div>
     )
 }
 
-export default HeaderAction
+export default HeaderActions

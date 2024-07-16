@@ -1,6 +1,6 @@
 import "./header.styles.css"
 import SearchView from "../search-view/search-view.component"
-import HeaderAction from "../header-action/header-action.component"
+import HeaderActions from "../header-actions/header-actions.component"
 
 const Header = () => {
     return(
@@ -9,8 +9,8 @@ const Header = () => {
                 <a href="#" className="logo">
                     <img src="./Skystery.png" alt="logo"/>
                 </a>
-                <SearchView classSearchView="search-view"/>
-                <HeaderAction/>
+                <SearchView/>
+                <HeaderActions/>
             </div>
         </header>      
     )

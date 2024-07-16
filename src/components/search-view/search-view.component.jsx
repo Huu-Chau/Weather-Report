@@ -1,9 +1,16 @@
 import "./search-view.styles.css"
 import SearchWrapper from "../search-wrapper/search-wrapper.component"
+import { useState } from "react"
 
-const SearchView = ({classSearchView}) => {
+const SearchView = () => {
+    const [isActive, setisActive] = useState(false) 
+
+    const activeToggle = (click) => {
+
+    }
+
     return(
-        <div className={`active ${classSearchView}`}>
+        <div className={`${isActive? 'active' : ''} search-view`}>
             <SearchWrapper/>
             <div className="search-result"/>
         </div>

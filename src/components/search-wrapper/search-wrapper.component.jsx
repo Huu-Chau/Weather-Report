@@ -12,6 +12,12 @@ const SearchWrapper = () => {
                 data-search-field="">
             </input>
             <span className="m-icon leading-icon">Search</span>
+            <button
+              className="icon-btn leading-icon has-state"
+              aria-label="close search"
+            >
+              <span class="m-icon">arrow_back</span>
+            </button>
         </div>
     )
 }
