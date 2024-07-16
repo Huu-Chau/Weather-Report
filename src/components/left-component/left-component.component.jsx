@@ -5,8 +5,8 @@ import Forecast from "../forecast/forecast.component"
 const LeftComponent = () => {
     return(
         <div className="content-left">
-            <CurrentWeather className="section current-weather" aria-label="current weather"/>
-            <Forecast className="section forecast" aria-labelledby="forecast-label"/>
+            <CurrentWeather/>
+            <Forecast/>
         </div>
     )
 }

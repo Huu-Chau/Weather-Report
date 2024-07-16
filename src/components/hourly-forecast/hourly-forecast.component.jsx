@@ -2,11 +2,9 @@ import "./hourly-forecast.styles.css"
 
 const HourlyForecast = () => {
     return(
-        <div>
-            <section class="section hourly-forecast" aria-label="hourly forecast">
-                
-            </section>
-        </div>
+        <section className="section hourly-forecast" aria-label="hourly forecast">
+            
+        </section>
     )
 } 
 

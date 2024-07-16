@@ -3,7 +3,7 @@ import SearchWrapper from "../search-wrapper/search-wrapper.component"
 
 const SearchView = ({classSearchView}) => {
     return(
-        <div className={` ${classSearchView}`}>
+        <div className={`active ${classSearchView}`}>
             <SearchWrapper/>
             <div className="search-result"/>
         </div>

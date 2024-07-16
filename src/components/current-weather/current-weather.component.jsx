@@ -4,7 +4,7 @@ const CurrentWeather = () => {
     return(
         <section className="section current-weather" aria-label="current weather" >
             <div className="card card-lg current-weather-card">
-
+                
             </div>
         </section>
     )

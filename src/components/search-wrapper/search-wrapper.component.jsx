@@ -7,8 +7,8 @@ const SearchWrapper = () => {
                 type="search" 
                 name="search" 
                 placeholder="Search city..." 
-                autocomplete="off" c
-                lass="search-field" 
+                autoComplete="off"
+                className="search-field" 
                 data-search-field="">
             </input>
             <span className="m-icon leading-icon">Search</span>
