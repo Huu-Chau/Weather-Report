@@ -1,18 +1,12 @@
 import "./search-view.styles.css"
 import SearchWrapper from "../search-wrapper/search-wrapper.component"
-import { useState } from "react"
+import SearchResult from "../search-result/search-result.component"
 
-const SearchView = () => {
-    const [isActive, setisActive] = useState(false) 
-
-    const activeToggle = (click) => {
-
-    }
-
+const SearchView = ({onClick, active}) => {
     return(
-        <div className={`${isActive? 'active' : ''} search-view`}>
-            <SearchWrapper/>
-            <div className="search-result"/>
+        <div className={`${active? 'active' : ''} search-view`}>
+            <SearchWrapper onClick={onClick}/>
+            <SearchResult/>
         </div>
     )
 }

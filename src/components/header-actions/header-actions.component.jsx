@@ -1,16 +1,12 @@
 import "./header-actions.styles.css"
 
-const HeaderActions = () => {
-    const toggleSearchView = () => {
-        
-    }
-
+const HeaderActions = ({onClick}) => {
     return(
         <div className="header-actions">
             <button 
                 className="icon-btn has-state" 
                 aria-label="open search" 
-                onClick={toggleSearchView}
+                onClick={onClick}
             >
                 <span className="m-icon icon">search</span>
             </button>
@@ -19,7 +15,7 @@ const HeaderActions = () => {
                 href="#/current-location" 
                 className="btn-primary has-state" 
                 data-current-location-btn="" 
-                disabled=""
+                // disabled=""
             >
                 <span className="m-icon">my_location</span>
                 <span className="span">Current Location</span>

@@ -1,6 +1,6 @@
 import "./search-wrapper.styles.css"
 
-const SearchWrapper = () => {
+const SearchWrapper = ({onClick}) => {
     return(
         <div className="search-wrapper">
             <input 
@@ -8,15 +8,18 @@ const SearchWrapper = () => {
                 name="search" 
                 placeholder="Search city..." 
                 autoComplete="off"
-                className="search-field" 
-                data-search-field="">
+                className="search-field"
+            >
             </input>
+
             <span className="m-icon leading-icon">Search</span>
+
             <button
               className="icon-btn leading-icon has-state"
               aria-label="close search"
+              onClick={onClick}
             >
-              <span class="m-icon">arrow_back</span>
+              <span className="m-icon">arrow_back</span>
             </button>
         </div>
     )

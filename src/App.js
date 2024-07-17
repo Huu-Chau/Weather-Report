@@ -6,12 +6,32 @@ import Main from "./components/main/main.component"
 
 function App() {
   const [weatherData, setweatherData] = useState([])
+  const [curWeatherData, setcurWeatherData] = useState({list:[]})
+  const [location, setlocation] = useState({city:{}})
+  const [cityName, setcityName] = useState('Tay Ninh') 
   const api_Key = process.env.REACT_APP_API_KEY
-  const [cityName, setcityName] = useState('Tây Ninh') 
+  // changing api key require refreshing the vscode for the .env to work, and need to wait for a while in order for the api_Key to be valid
+  const cityHandler = (city) => {
+    setcityName(city.target.value)
+  }
 
-  const fetchDataWeather = async () => {
+  const fetchCityCoord = async () => {
     try {
-      const dataFetch = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName},vn&APPID=${api_Key}`)
+      console.log("Fetching coordinates...")
+      const coordFetch = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${api_Key}`)
+      console.log("fetch sucess!")
+      const dataJson = await coordFetch.json()
+      return [dataJson[0].lat, dataJson[0].lon]
+    } catch (error) {
+      console.error("error fetching coordinates", error)
+    }
+  }
+
+  const fetchDataWeather = async (lat, lon) => {
+    try {
+      console.log("Fetching data...")
+      const dataFetch = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${api_Key}`)
+      console.log("fetch sucess!")
       const dataJson = await dataFetch.json()
       setweatherData(dataJson)
     } catch (err) {
@@ -19,20 +39,29 @@ function App() {
     }
   }
 
+  const weatherHandler = async () => {
+    const [lat, lon] = await fetchCityCoord()
+    await fetchDataWeather(lat, lon)
+  }
+
   useEffect(() => {
     // only use promised based data fetching on small api call
     // Nope, he said async is superior
-    fetchDataWeather()
-  }, [cityName,api_Key])
+    weatherHandler()
+  }, [cityName])
 
-  const cityHandler = (city) => {
-    setcityName(city.target.value)
-  }
- 
+  useEffect(() => {
+    if (weatherData) {
+      setcurWeatherData(weatherData.list)
+      setlocation(weatherData.city)
+      console.log(location)
+    }
+  }, [weatherData])
+
   return (
     <div>
       <Header oncityHandler={cityHandler}/>
-      <Main weather={weatherData}/>   
+      <Main curWeatherData={curWeatherData} location={location}/>   
     </div>
   );
 }

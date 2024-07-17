@@ -29,10 +29,6 @@
     clip-path: circle(130% at 73% 5%);
 }
 
-.search-view{ 
-    clip-path: circle(3% at calc(100% - 273px) 6%); 
-}
-
 .search-view:not(:focus-within) .search-result { 
     display: none; 
 }
@@ -56,9 +52,14 @@
         display: block;
         position: relative;
         width: 500px;
-        animation-timeline: auto;
+        /* animation-timeline: auto;
         animation-range-start: normal;
-        animation-range-end: normal;
+        animation-range-end: normal; */
         animation: auto ease 0s 1 normal none running none;
+    }
+}
+@media (min-width: 768px) {
+    .search-view {
+        clip-path: circle(3% at calc(100% - 273px) 6%);
     }
 }
