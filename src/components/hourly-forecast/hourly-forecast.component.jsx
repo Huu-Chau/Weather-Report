@@ -1,9 +1,16 @@
 import "./hourly-forecast.styles.css"
+import ForecastTemp from "../forecast-temp/forecast-temp.component"
+import ForecastWind from "../forecast-wind/forecast-wind.component"
 
-const HourlyForecast = () => {
+const HourlyForecast = ({currentWeatherData}) => {
+    
     return(
         <section className="section hourly-forecast" aria-label="hourly forecast">
-            
+            <h2 class="title-2">Today at</h2>
+            <div class="slider-container">
+                <ForecastTemp currentWeatherData={currentWeatherData}/>
+                <ForecastWind currentWeatherData={currentWeatherData}/>
+            </div>
         </section>
     )
 } 

@@ -1,12 +1,17 @@
 import ForecastCardList from "../forecast-card-list/forecast-card-list.component"
+import Loading from "../loading/loading.component"
 import "./forecast.styles.css"
 
 
-const Forecast = ({curWeatherData}) => {
+const Forecast = ({listWeatherData}) => {
+    if (!listWeatherData || !Array.isArray(listWeatherData) || listWeatherData.length === 0 || !listWeatherData[0].main || !listWeatherData[0].weather) {
+        return <Loading />;
+    }
+    const furuteWeatherData = listWeatherData.filter((_,index) => (index + 1) % 8 == 0)
     return(
         <section className="section forecast" aria-label="forecast-label" >
             <h2 className="title-2" id="forecast-label">5 Days Forecast</h2>
-            <ForecastCardList curWeatherData={curWeatherData}/>
+            <ForecastCardList furuteWeatherData={furuteWeatherData}/>
         </section>
     )
 } 

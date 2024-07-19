@@ -3,15 +3,15 @@ import CurrentWeather from "../current-weather/current-weather.component"
 import Forecast from "../forecast/forecast.component"
 import Loading from "../loading/loading.component"
 
-const LeftComponent = ({curWeatherData, location}) => {
-    if (!curWeatherData && !curWeatherData.main && !curWeatherData.weather && curWeatherData.length === 0) {
-        return <Loading/>
+const LeftComponent = ({listWeatherData, location}) => {
+    if (!listWeatherData || !Array.isArray(listWeatherData) || listWeatherData.length === 0 || !listWeatherData[0].main || !listWeatherData[0].weather) {
+        return <Loading />;
     }
-        const { main, weather } = curWeatherData[0];
+        const { main, weather } = listWeatherData[0];
         const temp = main.temp;
         const { icon, description } = weather[0];
         const curLocation = `${location.name}, ${location.country}`
-
+        console.log(location.name)
     return(
         <div className="content-left">
             <CurrentWeather 
@@ -20,7 +20,7 @@ const LeftComponent = ({curWeatherData, location}) => {
                 description={description} 
                 curLocation={curLocation}
             />
-            <Forecast curWeatherData={curWeatherData}/>
+            <Forecast listWeatherData={listWeatherData}/>
         </div>
     )
 }

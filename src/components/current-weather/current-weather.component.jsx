@@ -10,7 +10,7 @@ const CurrentWeather = ({temp, icon, description, curLocation}) => {
         day:'numeric'
     }
     //the undefiend is language code table, option is extracting the component needed from Mon Jan 10 2024 10:10:10 GMT+0700 (Indochina Time)
-    const formattedDate = new Date().toLocaleDateString(undefined, option)
+    const formattedDate = new Date().toLocaleDateString(undefined, {option})
 
     return(
         <section className="section current-weather" aria-label="current weather" >
@@ -19,7 +19,7 @@ const CurrentWeather = ({temp, icon, description, curLocation}) => {
                 <Weapper temp={temp} icon={icon} description={description}/>
                 <p className="body-3">{description}</p>
                 <ul className="meta-list">
-                    <MetaItem iconName={"calendar_today"} temp={temp} display={formattedDate}/>
+                    <MetaItem iconName={"calendar_today"} display={formattedDate}/>
                     <MetaItem iconName={"location_on"} display={curLocation}/>
                 </ul>
             </div>

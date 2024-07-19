@@ -3,12 +3,12 @@ import LeftComponent from "../left-component/left-component.component"
 import RightComponent from "../right-component/right-component.component"
 import Loading from "../loading/loading.component"
 
-const Main = ({curWeatherData, location}) => {
+const Main = ({listWeatherData, location, airQuality}) => {
     return(
         <main>
             <article className="container fade-in">
-                <LeftComponent curWeatherData={curWeatherData} location={location}/>
-                <RightComponent curWeatherData={curWeatherData}/>
+                <LeftComponent listWeatherData={listWeatherData} location={location}/>
+                <RightComponent listWeatherData={listWeatherData} airQuality={airQuality} location={location}/>
                 <Loading/>     
             </article>
         </main>
