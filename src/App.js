@@ -11,6 +11,7 @@ function App() {
   const [airQuality, setairQuality] = useState(null)
   const [cityName, setcityName] = useState('Tay Ninh') 
   const api_Key = process.env.REACT_APP_API_KEY
+  const url_fetch = process.env.REACT_APP_URL_FETCH
   // changing api key require refreshing the vscode for the .env to work, and need to wait for a while in order for the api_Key to be valid
   const cityHandler = (city) => {
     setcityName(city.target.value)
@@ -19,7 +20,7 @@ function App() {
   // get the coord from the e.target.value
   const fetchCityCoord = async () => {
     try {
-      const coordFetch = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${api_Key}`)
+      const coordFetch = await fetch(`${url_fetch}/geo/1.0/direct?q=${cityName}&limit=1&appid=${api_Key}`)
       const [dataJson] = await coordFetch.json()
       const {lat, lon, name, country} = dataJson
       setlocation({name: name, country: country}) 
@@ -32,7 +33,7 @@ function App() {
   const fetchDataWeather = async (lat, lon) => {
     try {
       console.log("Fetching data...")
-      const dataFetch = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${api_Key}`)
+      const dataFetch = await fetch(`${url_fetch}/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${api_Key}`)
       const dataJson = await dataFetch.json()
       setweatherData(dataJson)
       setlocation(prevState => ({...prevState, cityTime: dataJson.city}))
@@ -45,7 +46,7 @@ function App() {
   const fetchAirQuality = async (lat, lon) => {
     try {
       console.log("Fetching air quality...")
-      const dataFetch = await fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${api_Key}`)  
+      const dataFetch = await fetch(`${url_fetch}/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${api_Key}`)  
       const dataJson = await dataFetch.json()
       const [air_pollution] = dataJson.list   
       setairQuality(air_pollution)
