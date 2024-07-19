@@ -20,11 +20,7 @@ function App() {
   // get the coord from the e.target.value
   const fetchCityCoord = async () => {
     try {
-<<<<<<< HEAD
       const coordFetch = await fetch(`${url_fetch}/geo/1.0/direct?q=${cityName}&limit=1&appid=${api_Key}`)
-=======
-      const coordFetch = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${api_Key}`)
->>>>>>> 033d1394712635cb7376bfff8e1018fcb090a1a2
       const [dataJson] = await coordFetch.json()
       const {lat, lon, name, country} = dataJson
       setlocation({name: name, country: country}) 
