@@ -11,7 +11,6 @@ const LeftComponent = ({listWeatherData, location}) => {
         const temp = main.temp;
         const { icon, description } = weather[0];
         const curLocation = `${location.name}, ${location.country}`
-        console.log(location.name)
     return(
         <div className="content-left">
             <CurrentWeather 

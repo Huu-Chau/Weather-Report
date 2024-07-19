@@ -8,7 +8,7 @@ const RightComponent = ({listWeatherData, airQuality, location}) => {
         return <Loading />;
     }
     const { main, visibility } = listWeatherData[0];
-    const {sunrise, sunset, timezone } = location
+    const {sunrise, sunset, timezone } = location.cityTime
     const {humidity, pressure, feels_like } = main
     // you can call an object var to have all the props from 18 to 25
     const currentWeatherData = listWeatherData.filter((_,index) => index < 8)

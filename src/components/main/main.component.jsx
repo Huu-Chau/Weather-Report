@@ -3,7 +3,7 @@ import LeftComponent from "../left-component/left-component.component"
 import RightComponent from "../right-component/right-component.component"
 import Loading from "../loading/loading.component"
 
-const Main = ({listWeatherData, location, airQuality}) => {
+const Main = ({listWeatherData, location, airQuality}) => { 
     return(
         <main>
             <article className="container fade-in">

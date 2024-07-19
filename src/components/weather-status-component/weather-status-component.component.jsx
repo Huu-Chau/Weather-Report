@@ -11,23 +11,23 @@ const WeatherStatusComponent = ({name, statusValue}) => {
             )
         case "Pressure":
             return(
-                <div class="wrapper">
-                    <span class="m-icon">airwave</span>
-                    <p class="title-1">{statusValue}<sub>hPa</sub></p>
+                <div className="wrapper">
+                    <span className="m-icon">airwave</span>
+                    <p className="title-1">{statusValue}<sub>hPa</sub></p>
                   </div>
             )
         case "Visibility":
             return(
-                <div class="wrapper">
-                    <span class="m-icon">visibility</span>
-                    <p class="title-1">{statusValue / 1000}<sub>km</sub></p>
+                <div className="wrapper">
+                    <span className="m-icon">visibility</span>
+                    <p className="title-1">{statusValue / 1000}<sub>km</sub></p>
                 </div>
             )
         case "Feels like":
             return(
-                <div class="wrapper">
-                    <span class="m-icon">thermostat</span>
-                    <p class="title-1">{parseInt(statusValue - 273.15)}&deg;<sub>C</sub></p>
+                <div className="wrapper">
+                    <span className="m-icon">thermostat</span>
+                    <p className="title-1">{parseInt(statusValue - 273.15)}&deg;<sub>C</sub></p>
                   </div>
             )
         default:

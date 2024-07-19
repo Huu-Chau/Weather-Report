@@ -2,7 +2,7 @@ import ForecastWindComponent from "../forecast-wind-component/forecast-wind-comp
 
 const ForecastWind = ({currentWeatherData}) => {
     return(
-        <ul class="slider-list">
+        <ul className="slider-list">
             {currentWeatherData.map((tempData) => {
                 const keyValue = tempData.dt 
                 const {speed, deg} = tempData.wind
