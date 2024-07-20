@@ -45,23 +45,6 @@ Here is the component structure of the website i made.
 
   This website has all the basic requirement of a Weather Report website.
 
-<<<<<<< HEAD
-### 1. Requirement:
-Build a Responsive Weather report system that shows the basic Weather status, air quality, and the time of sunrise/sunset.
-We want to track the following statistic such as:
-- Types of weather (Sunny, Cloudy, Rain, etc)
-- Temperature (°C)
-- Air quality (Humidity, Pressure, Visibility, Feels like)
-- Current weather of different moments of the day.
-- The weather status of the next 5 days.
-- The input value where the User can enter the city name to display the staus of that area.
-
-### 2. Component Structure
-
-<img src="./ComponentStructure.png"></img>
-=======
-  Which is why there are many updates I want to make onto the project, such as
-
 - Adding animation such as the animation of the current weather (sunny, rain) in the background for better User experience
 - Adding searching feature that zoning the closest input value and diplay it into a drop down list. This will require an understanding of backend coding. Which is why I have plans to learn Nodejs to make it happen.
 - Change the "Submit Location" button into "Current Location" as we will click directly on the drop list to display that city's weather status
@@ -69,4 +52,3 @@ We want to track the following statistic such as:
 - Create a navigation bar with Home that display the content of the website and Saved city that store the city's weather status you saved and display it on the Home page.
 - I have plans of learning React Native in order to deploy a true app, not just a website.
 - In the app, i want to display the data of the area the user is standing. This will require google maps api and I will updates this feature after finishing React Native.
->>>>>>> d99088ccac9faea8d1fb53bb57949d8904d4858d
