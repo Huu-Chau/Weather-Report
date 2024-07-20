@@ -1,8 +1,8 @@
 # Sumary
-```
+
 Hi, my name is Nguyen Huu Chau.
 And this project is the home assignment for applying as an **Intern Frontend Developer**.
-```
+
 ## Tech Stack:
 
 - For the frontend, I am using ReactJS along with Bootstrap CSS to build a fully Responsive website.
