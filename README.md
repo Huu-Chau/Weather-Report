@@ -30,3 +30,7 @@ We want to track the following statistic such as:
 Here is the component structure of the website i made.
 
 <img src="./ComponentStructure.png"></img>
+
+## What I learned
+
+## Future updates
