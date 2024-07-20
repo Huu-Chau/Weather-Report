@@ -11,8 +11,6 @@ And this project is the home assignment for applying as an **Intern Frontend Dev
 - For web deployment, I use Vercel to display the web contents and features.
 - Here is the link [Weather report - Check out what's in the sky above!](https://weather-report-b93lmx88r-chaus-projects-8bdd6df0.vercel.app)
 
-## Techniques:
-
 ## Detail Design
 
 ### 1. Requirement:
