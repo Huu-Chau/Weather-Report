@@ -32,7 +32,7 @@ Here is the component structure of the website i made.
 
   From building the Weather report website, I got to have a large ammount of understanding about React and its concept, along with the basic principle of creating and deploying a website on the internet.
 
-- Deep learning about **Components** and **Component interactions**.
+- Deep understands about **Components** and **Component interactions**.
 - Understand the **State** concept (`state`, `setState`, `...prevState`, etc)
 - Know how to **destructure an object state** and pass it to the **Parent** or **Child** component.
 - Basic understanding of **callbacks, promises and async awaits** to fetch the data, change the parameter input and `useEffect()`.
