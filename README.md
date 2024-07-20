@@ -2,7 +2,7 @@
 
 Hi, my name is Nguyen Huu Chau.
 
-And this project is the home assignment for applying as an **Intern Frontend Developer**.
+And this is my side project called [Weather Report]
 
 ## Tech Stack:
 
