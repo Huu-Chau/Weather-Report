@@ -50,3 +50,7 @@ We want to track the following statistic such as:
 - Current weather of different moments of the day.
 - The weather status of the next 5 days.
 - The input value where the User can enter the city name to display the staus of that area.
+
+### 2. Component Structure
+
+<img src="./ComponentStructure.png"></img>
