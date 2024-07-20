@@ -49,5 +49,8 @@ We want to track the following statistic such as:
 - Air quality (Humidity, Pressure, Visibility, Feels like)
 - Current weather of different moments of the day.
 - The weather status of the next 5 days.
-- The input value where the User can ent
-- er the city na    me to display the staus of that area.
+- The input value where the User can enter the city name to display the staus of that area.
+
+### 2. Component Structure
+
+/ComponentStructure.png
