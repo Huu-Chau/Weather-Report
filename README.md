@@ -13,11 +13,12 @@ This project is the home assignment for applying as an **Intern Frontend Develop
 
 ## Detail Design
 
+### 1. Requirement:
 Build a Responsive Weather report system that shows the basic Weather status, air quality, and the time of sunrise/sunset.
 We want to track the following statistic such as:
--Types of weather (Sunny, Cloudy, Rain, etc)
--Temperature (°C)
--Air quality (Humidity, Pressure, Visibility, Feels like)
--Current weather of different moments of the day.
--The weather status of the next 5 days.
--The input value where the user can enter the city name to display the staus of that area.
+- Types of weather (Sunny, Cloudy, Rain, etc)
+- Temperature (°C)
+- Air quality (Humidity, Pressure, Visibility, Feels like)
+- Current weather of different moments of the day.
+- The weather status of the next 5 days.
+- The input value where the user can enter the city name to display the staus of that area.
