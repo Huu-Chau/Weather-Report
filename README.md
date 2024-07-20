@@ -51,4 +51,4 @@ Here is the component structure of the website i made.
 - Adding features to convert the tempreture from °C to °F, as well as convering km/h into mph/h
 - Create a navigation bar with Home that display the content of the website and Saved city that store the city's weather status you saved and display it on the Home page.
 - I have plans of learning React Native in order to deploy a true app, not just a website.
-- In the app, i want to display the data of the area the user is standing. This will require google maps api and I will updates this feature after finishing React Native.
+- In the app, i want to display the data of the area the user is standing. This will require google maps api and I will updates this feature after having the required understanding of React Native.
