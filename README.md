@@ -1,6 +1,7 @@
 # Sumary
 
-This project is the home assignment for applying as an **Intern Frontend Developer**.
+Hi, my name is Nguyen Huu Chau. 
+And this project is the home assignment for applying as an **Intern Frontend Developer**.
 
 ## Tech Stack:
 
