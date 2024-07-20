@@ -52,5 +52,5 @@ We want to track the following statistic such as:
 - The input value where the User can enter the city name to display the staus of that area.
 
 ### 2. Component Structure
-Here is the component structure of the website i made
+Here is the component structure of the website i made.
 <img src="./ComponentStructure.png"></img>
