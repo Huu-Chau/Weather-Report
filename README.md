@@ -31,8 +31,12 @@ Here is the component structure of the website i made.
 
 ## What I learned:
 
-  From building the Weather report website, I get to have a large ammount of understanding about React and its concept.
+  From building the Weather report website, I got to have a large ammount of understanding about React and its concept, along with the basic principle of creating and deploying a website on the internet.
 
+- Deep learning about components and component interactions.
+- Understanding the State concept (variable, setState, ...prevState, etc)
+- Know how to destructure an object state and pass it to the Parent or Child component.
+- Basic understanding of callbacks, promise and async await to fetch the data, converting parameter input and useEffect.
 - 
 
 ## Future updates:
@@ -41,4 +45,4 @@ Here is the component structure of the website i made.
 
   But there are many updates I want to make onto the project, such as
 
--Adding searching feature that has 
+- Adding searching feature that has 
