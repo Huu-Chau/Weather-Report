@@ -1,6 +1,6 @@
 # Sumary
 
-Hi, my name is Nguyen Huu Chau. 
+Hi, my name is Nguyen Huu Chau.  <\n>
 And this project is the home assignment for applying as an **Intern Frontend Developer**.
 
 ## Tech Stack:
