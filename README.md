@@ -11,6 +11,5 @@ This project is the home assignment for applying as an **Intern Frontend Develop
 
 ## Techniques:
 
--Clean architecture.
 
-# Detail Design
+## Detail Design
