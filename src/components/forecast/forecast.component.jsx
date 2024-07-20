@@ -1,6 +1,6 @@
 import ForecastCardList from "../forecast-card-list/forecast-card-list.component"
 import Loading from "../loading/loading.component"
-import "./forecast.styles.css"
+// import "./forecast.styles.css"
 
 
 const Forecast = ({listWeatherData}) => {
@@ -12,7 +12,7 @@ const Forecast = ({listWeatherData}) => {
         <section className="section forecast" aria-label="forecast-label" >
             <h2 className="title-2" id="forecast-label">5 Days Forecast</h2>
             <ForecastCardList furuteWeatherData={furuteWeatherData}/>
-        </section>
+        </section>  
     )
 } 
 

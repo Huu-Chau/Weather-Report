@@ -1,24 +1,23 @@
 import "./header-actions.styles.css"
 
-const HeaderActions = ({onClick}) => {
+const HeaderActions = ({onClickActive, cityHandler}) => {
     return(
         <div className="header-actions">
             <button 
                 className="icon-btn has-state" 
                 aria-label="open search" 
-                onClick={onClick}
+                onClick={onClickActive}
             >
                 <span className="m-icon icon">search</span>
             </button>
 
             <a 
-                href="#/current-location" 
-                className="btn-primary has-state" 
-                data-current-location-btn="" 
-                // disabled=""
+                href="#" 
+                className="btn-primary has-state"
+                onClick={cityHandler}
             >
                 <span className="m-icon">my_location</span>
-                <span className="span">Current Location</span>
+                <span className="span">Submit Location</span>
             </a>
         </div>
     )

@@ -3,22 +3,24 @@ import SearchView from "../search-view/search-view.component"
 import HeaderActions from "../header-actions/header-actions.component"
 import { useState } from "react"
 
-const Header = () => {
-    const [isActiveSV, setisActiveSV] = useState(false) 
-
-    const activeToggle = () => {
-        // console.log(isActiveSV)
-        setisActiveSV(!isActiveSV)
+const Header = ({cityHandler, setSearchValue}) => {
+    const [activeSV, setactiveSV] = useState(false) 
+    function activeHandler(){
+        setactiveSV(!activeSV)
     }
-
     return(
         <header className="header">
             <div className="container">
                 <a href="#" className="logo">
                     <img src="./Skystery.png" alt="logo"/>
                 </a>
-                <SearchView active={isActiveSV} onClick={activeToggle}/>
-                <HeaderActions onClick={activeToggle}/>
+                <SearchView 
+                    activeSV={activeSV} 
+                    onClickActive={activeHandler}
+                    cityHandler={cityHandler}
+                    setSearchValue={setSearchValue}
+                />
+                <HeaderActions onClickActive={activeHandler} setSearchValue={setSearchValue} cityHandler={cityHandler}/>
             </div>
         </header>      
     )

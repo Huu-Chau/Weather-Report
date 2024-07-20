@@ -4,11 +4,11 @@ import HourlyForecast from "../hourly-forecast/hourly-forecast.component"
 import Loading from "../loading/loading.component"
 
 const RightComponent = ({listWeatherData, airQuality, location}) => {
-    if (!listWeatherData || !Array.isArray(listWeatherData) || !listWeatherData[0].main) {
+    if (!listWeatherData || !Array.isArray(listWeatherData) || !listWeatherData[0].main || !location) {
         return <Loading />;
     }
     const { main, visibility } = listWeatherData[0];
-    const {sunrise, sunset, timezone } = location.cityTime
+    const {sunrise, sunset, timezone } = location.cityTime || {}  
     const {humidity, pressure, feels_like } = main
     // you can call an object var to have all the props from 18 to 25
     const currentWeatherData = listWeatherData.filter((_,index) => index < 8)
