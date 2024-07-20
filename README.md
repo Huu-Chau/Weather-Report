@@ -29,6 +29,9 @@ Here is the component structure of the website i made.
 
 <img src="./ComponentStructure.png"></img>
 
-## What I learned
+## What I learned:
 
-## Future updates
+  From building the Weather report website, I get to have a large ammount of understanding about React and its concept.
+- 
+
+## Future updates:
