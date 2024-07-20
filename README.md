@@ -28,4 +28,5 @@ We want to track the following statistic such as:
 
 ### 2. Component Structure
 Here is the component structure of the website i made.
+
 <img src="./ComponentStructure.png"></img>
