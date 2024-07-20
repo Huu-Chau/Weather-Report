@@ -53,4 +53,4 @@ We want to track the following statistic such as:
 
 ### 2. Component Structure
 
-/ComponentStructure.png
+/src/ComponentStructure.png
