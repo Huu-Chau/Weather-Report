@@ -1,4 +1,4 @@
-import Loading from "../loading/loading.component"
+import Loading from "../../../../../../../loading/loading.component"
 
 const AirQualityName = ({name}) => {
     switch (name) {
