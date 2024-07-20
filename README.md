@@ -2,14 +2,13 @@
 
 Hi, my name is Nguyen Huu Chau.
 
-And this is my side project called [Weather Report]
+And this is my side project link [Weather Report - Check out what's in the sky above!](https://weather-report-lemon-eta.vercel.app/)
 
 ## Tech Stack:
 
 - For the frontend, I am using ReactJS along with Bootstrap CSS to build a fully Responsive website.
 - For the data, I use API key from https://openweathermap.org/api to fetch the data and with the help of Postman, I can get the required information for illustration.
 - For web deployment, I use Vercel to display the web contents and features.
-- Here is the link [Weather report - Check out what's in the sky above!]([https://weather-report-lemon-eta.vercel.app/])
 
 ## Detail Design
 
@@ -33,14 +32,14 @@ Here is the component structure of the website i made.
 
   From building the Weather report website, I got to have a large ammount of understanding about React and its concept, along with the basic principle of creating and deploying a website on the internet.
 
-- Deep learning about components and component interactions.
-- Understand the State concept (variable, setState, ...prevState, etc)
-- Know how to destructure an object state and pass it to the Parent or Child component.
-- Basic understanding of callbacks, promises and async awaits to fetch the data, convert parameter input and use useEffect.
-- Learn the flows of the website so as to handle the error more efficiency.
-- Learn how to fetch data and store it in a state to do different tasks (use it as parameter to fetch the data required from the parameter given, use the data to display on the website)
-- Learn the functionality of packet.json, packet-lock.json, .gitignore and .env
-- Understand the git commad to add, pull, commit and push the code onto the github, along with cloning the git repo if public.
+- Deep learning about **Components** and **Component interactions**.
+- Understand the **State** concept (`state`, `setState`, `...prevState`, etc)
+- Know how to **destructure an object state** and pass it to the **Parent** or **Child** component.
+- Basic understanding of **callbacks, promises and async awaits** to fetch the data, change the parameter input and `useEffect()`.
+- Learn the **flows of the website** so as to **handle the error** more **efficiency**.
+- Learn how to **fetch data and store it in a state** to perform tasks (use it as a parameter to fetch the data required, use the state value to display the content of the website)
+- Learn the functionality of **package.json**, **.gitignore** and **.env**
+- Understand the **git commad** such as ```git add .```, ```git pull```, ```git commit``` and ```git push``` to push the code onto the github, along with ```git clone``` to get the code on github if the repositoy is public.
 
 ## Future updates:
 
