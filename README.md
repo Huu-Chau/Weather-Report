@@ -32,6 +32,13 @@ Here is the component structure of the website i made.
 ## What I learned:
 
   From building the Weather report website, I get to have a large ammount of understanding about React and its concept.
+
 - 
 
 ## Future updates:
+
+  This website has all the basic requirement of a Weather Report website
+
+  But there are many updates I want to make onto the project, such as
+
+-Adding searching feature that has 
