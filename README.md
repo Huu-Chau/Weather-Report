@@ -4,6 +4,8 @@ Hi, my name is Nguyen Huu Chau.
 
 And this is my side project link [Weather Report - Check out what's in the sky above!](https://weather-report-lemon-eta.vercel.app/)
 
+It illustrates all the statistics of the weather by inserting the name of the city in the search bar.
+
 ## Tech Stack:
 
 - For the frontend, I am using ReactJS along with Bootstrap CSS to build a fully Responsive website.
