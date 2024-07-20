@@ -39,7 +39,7 @@ Here is the component structure of the website i made.
 - Learn the **flows of the website** so as to **handle the error** more **efficiency**.
 - Learn how to **fetch data and store it in a state** to perform tasks (use it as a parameter to fetch the data required, use the state value to display the content of the website)
 - Learn the functionality of **package.json**, **.gitignore** and **.env**
-- Understand the **git commad** such as ```git add .```, ```git pull```, ```git commit``` and ```git push``` to push the code onto the github, along with ```git clone``` to get the code on github if the repositoy is public.
+- Understand the **git commads** such as ```git add .```, ```git pull```, ```git commit```, ```git remote``` and ```git push``` to push the code into github, along with ```git clone``` to get the code from github.
 
 ## Future updates:
 
