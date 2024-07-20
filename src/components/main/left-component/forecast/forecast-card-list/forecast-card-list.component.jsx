@@ -1,9 +1,10 @@
-import ForecastCard from "../forecast-card/forecast-card.component"
-import Loading from "../loading/loading.component"
+import ForecastCard from "./forecast-card/forecast-card.component"
 
 const ForecastCardList = ({furuteWeatherData}) => {
     if (!Array.isArray(furuteWeatherData)) {
-        return <Loading />;
+        return (
+            <div className="loading" data-loading></div>
+        );
     }
 
     return(

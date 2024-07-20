@@ -1,6 +1,6 @@
 import "./header.styles.css"
-import SearchView from "../search-view/search-view.component"
-import HeaderActions from "../header-actions/header-actions.component"
+import SearchView from "./search-view/search-view.component"
+import HeaderActions from "./header-actions/header-actions.component"
 import { useState } from "react"
 
 const Header = ({cityHandler, setSearchValue}) => {

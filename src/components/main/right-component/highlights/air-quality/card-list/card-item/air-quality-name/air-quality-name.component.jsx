@@ -1,5 +1,3 @@
-import Loading from "../../../../../../../loading/loading.component"
-
 const AirQualityName = ({name}) => {
     switch (name) {
         case "pm2_5":
@@ -19,7 +17,9 @@ const AirQualityName = ({name}) => {
                 <p className="label-1">O<sub>3</sub></p>
             )
         default:
-            return <Loading/>     
+            return (
+                <p className="label-1">O<sub>3</sub></p>
+            )
     }
     
 } 

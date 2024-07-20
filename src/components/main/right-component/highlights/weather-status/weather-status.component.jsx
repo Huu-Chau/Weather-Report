@@ -1,4 +1,4 @@
-import WeatherStatusComponent from "../weather-status-component/weather-status-component.component"
+import WeatherStatusComponent from "./weather-status-component/weather-status-component.component"
 
 const WeatherStatus = ({name, statusValue}) => {
     return(

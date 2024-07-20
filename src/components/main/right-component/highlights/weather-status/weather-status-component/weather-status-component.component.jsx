@@ -1,5 +1,3 @@
-import Loading from "../loading/loading.component";
-
 const WeatherStatusComponent = ({name, statusValue}) => {
     switch (name) {
         case "Humidity":
@@ -32,7 +30,7 @@ const WeatherStatusComponent = ({name, statusValue}) => {
             )
         default:
             return(
-                <Loading/>
+                <div className="loading"></div>
             )
     }
 

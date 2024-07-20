@@ -1,6 +1,6 @@
 import "./current-weather.styles.css"
 import Weapper from "./weapper/weapper.component"
-import MetaItem from "../meta-item/meta-item.component"
+import MetaItem from "./meta-item/meta-item.component"
 import React from "react"
 
 const CurrentWeather = ({temp, icon, description, curLocation}) => {

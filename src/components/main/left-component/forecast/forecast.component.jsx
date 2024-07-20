@@ -1,11 +1,12 @@
-import ForecastCardList from "../forecast-card-list/forecast-card-list.component"
-import Loading from "../loading/loading.component"
+import ForecastCardList from "./forecast-card-list/forecast-card-list.component"
 // import "./forecast.styles.css"
 
 
 const Forecast = ({listWeatherData}) => {
     if (!listWeatherData || !Array.isArray(listWeatherData) || listWeatherData.length === 0 || !listWeatherData[0].main || !listWeatherData[0].weather) {
-        return <Loading />;
+        return (
+            <div className="loading"></div>
+        )
     }
     const furuteWeatherData = listWeatherData.filter((_,index) => (index + 1) % 8 == 0)
     return(

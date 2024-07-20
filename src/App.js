@@ -9,7 +9,7 @@ function App() {
   const [weatherData, setweatherData] = useState(null)
   const [listWeatherData, setlistWeatherData] = useState({list:[]})
   const [airQuality, setairQuality] = useState(null)
-  const [cityName, setcityName] = useState('Ha Noi')
+  const [cityName, setcityName] = useState('Tay Ninh')
   const [searchValue, setSearchValue] = useState('');
  
   const api_Key = process.env.REACT_APP_API_KEY

@@ -1,11 +1,12 @@
 import "./right-component.styles.css"
-import Highlights from "../../highlights/highlights.component"
-import HourlyForecast from "../../hourly-forecast/hourly-forecast.component"
-import Loading from "../../loading/loading.component"
+import Highlights from "./highlights/highlights.component"
+import HourlyForecast from "./hourly-forecast/hourly-forecast.component"
 
 const RightComponent = ({listWeatherData, airQuality, location}) => {
     if (!listWeatherData || !Array.isArray(listWeatherData) || !listWeatherData[0].main || !location) {
-        return <Loading />;
+        return (
+            <div className="loading" data-loading></div>
+        )
     }
     const { main, visibility } = listWeatherData[0];
     const {sunrise, sunset, timezone } = location.cityTime || {}  

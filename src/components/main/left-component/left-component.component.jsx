@@ -1,11 +1,12 @@
 import "./left-component.styles.css"
-import CurrentWeather from "../../current-weather/current-weather.component"
-import Forecast from "../../forecast/forecast.component"
-import Loading from "../../loading/loading.component"
+import CurrentWeather from "./current-weather/current-weather.component"
+import Forecast from "./forecast/forecast.component"
 
 const LeftComponent = ({listWeatherData, location}) => {
     if (!listWeatherData || !Array.isArray(listWeatherData) || listWeatherData.length === 0 || !listWeatherData[0].main || !listWeatherData[0].weather) {
-        return <Loading />;
+        return (
+            <div className="loading"></div>
+        )
     }
         const { main, weather } = listWeatherData[0];
         const temp = main.temp;

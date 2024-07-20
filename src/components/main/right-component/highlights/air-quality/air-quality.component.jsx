@@ -1,4 +1,4 @@
-import CardList from "../card-list/card-list.component"
+import CardList from "./card-list/card-list.component"
 
 const AirQuality = ({airQuality, aqiValue}) => {
     const {aqi} = aqiValue 

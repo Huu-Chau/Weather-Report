@@ -1,4 +1,4 @@
-import ForecastWindComponent from "../forecast-wind-component/forecast-wind-component.component"
+import ForecastWindComponent from "./forecast-wind-component/forecast-wind-component.component"
 
 const ForecastWind = ({currentWeatherData}) => {
     return(

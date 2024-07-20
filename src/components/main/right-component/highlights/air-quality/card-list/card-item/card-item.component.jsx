@@ -1,4 +1,4 @@
-import AirQualityName from "../air-quality-name/air-quality-name.component"
+import AirQualityName from "./air-quality-name/air-quality-name.component"
 
 const CardItem = ({prop, name}) => {
     return(

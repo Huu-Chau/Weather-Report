@@ -1,6 +1,6 @@
 import "./hourly-forecast.styles.css"
-import ForecastTemp from "../forecast-temp/forecast-temp.component"
-import ForecastWind from "../forecast-wind/forecast-wind.component"
+import ForecastTemp from "./forecast-temp/forecast-temp.component"
+import ForecastWind from "./forecast-wind/forecast-wind.component"
 
 const HourlyForecast = ({currentWeatherData}) => {
     

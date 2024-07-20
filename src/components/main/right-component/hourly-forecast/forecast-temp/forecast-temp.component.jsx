@@ -1,4 +1,4 @@
-import ForecastTempComponent from "../forecast-temp-component/forecast-temp-component.component"
+import ForecastTempComponent from "./forecast-temp-component/forecast-temp-component.component"
 
 const ForecastTemp = ({currentWeatherData}) => {
     return(

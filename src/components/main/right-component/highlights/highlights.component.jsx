@@ -1,13 +1,12 @@
 import "./highlights.styles.css"
-import AirQuality from "../air-quality/air-quality.component"
-import SunriseSunset from "../sunrise-sunset/sunrise-sunset.component"
-import WeatherStatus from "../weather-status/weather-status.component"
-import Loading from "../loading/loading.component"
+import AirQuality from "./air-quality/air-quality.component"
+import SunriseSunset from "./sunrise-sunset/sunrise-sunset.component"
+import WeatherStatus from "./weather-status/weather-status.component"
 
 const Highlights = ({airQuality, sunrise, sunset, timezone, humidity, pressure, feels_like, visibility}) => {
     if(!airQuality){
         return(
-            <Loading/>
+            <div className="loading"></div>
         )
     }
     

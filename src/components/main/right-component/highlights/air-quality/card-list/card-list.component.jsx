@@ -1,4 +1,4 @@
-import CardItem from "../card-item/card-item.component"
+import CardItem from "./card-item/card-item.component"
 
 const CardList = ({airQuality}) => {
     const {pm2_5, so2, no2, o3} = airQuality.components
