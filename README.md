@@ -16,7 +16,8 @@ And this project is the home assignment for applying as an **Intern Frontend Dev
 ## Detail Design
 
 ### 1. Requirement:
-Build a Responsive Weather report system that shows the basic Weather status, air quality, and the time of sunrise/sunset.
+In order to build a Responsive Weather report system that shows the basic Weather status, air quality, and the time of sunrise/sunset.
+
 We want to track the following statistic such as:
 - Types of weather (Sunny, Cloudy, Rain, etc)
 - Temperature (°C)
