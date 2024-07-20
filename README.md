@@ -34,15 +34,23 @@ Here is the component structure of the website i made.
   From building the Weather report website, I got to have a large ammount of understanding about React and its concept, along with the basic principle of creating and deploying a website on the internet.
 
 - Deep learning about components and component interactions.
-- Understanding the State concept (variable, setState, ...prevState, etc)
+- Understand the State concept (variable, setState, ...prevState, etc)
 - Know how to destructure an object state and pass it to the Parent or Child component.
-- Basic understanding of callbacks, promise and async await to fetch the data, converting parameter input and useEffect.
-- 
+- Basic understanding of callbacks, promises and async awaits to fetch the data, convert parameter input and use useEffect.
+- Learn the flows of the website so as to handle the error more efficiency.
+- Learn how to fetch data and store it in a state to do different tasks (use it as parameter to fetch the data required from the parameter given, use the data to display on the website)
+- Learn the functionality of packet.json, packet-lock.json, .gitignore and .env
+- Understand the git commad to add, pull, commit and push the code onto the github, along with cloning the git repo if public.
 
 ## Future updates:
 
-  This website has all the basic requirement of a Weather Report website
+  This website has all the basic requirement of a Weather Report website.
 
-  But there are many updates I want to make onto the project, such as
+  Which is why there are many updates I want to make onto the project, such as
 
-- Adding searching feature that has 
+- Adding searching feature that zoning the closest input value and diplay it into a drop down list.
+
+  This will required backend learning and
+  
+- Adding features to convert the tempreture from °C to °F, as well as convering km/h into mph/h
+- Create a navigation bar with Home t, Saved city
